@@ -30,3 +30,20 @@ display: table;
     display: table-cell;
     text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+
+
+.text {
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  line-height: 2.5;
+  background-color: white;
+  color: #262626;
+  margin-top: calc(100% - 30px);
+  margin-left: 25%;
+  margin-right: 25%;
+  z-index: 5;
+  position: relative
+}
