@@ -6,14 +6,39 @@
 	<meta name="viewport" content="width=device-width">
 	<title>bystand</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/e9a7752a7b.js" crossorigin="anonymous"></script>
   <link href="LogoTransparent.png" rel="icon" type="image/png" />
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body onload="alert('This site is under development')">
+  <div id="scrolldown">
+    <p id="scrolldownnotify">↓ Scroll down! </p>
+  </div>
 	  <model-viewer camera-controls disable-zoom id="logo" src="untitled.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="0" camera-orbit="24.66deg 85.96deg auto">
     </model-viewer>
   <p class="text">Hi! I'm bystand. I'm a programmer/graphic designer based in the US. I do a wide range of work, including 3D design, logo design, discord bots, and websites (as you can see here). I'm always looking to learn how to do new things. I play lots of videogames such as Minecraft, Forza, Squadrons, NHL, and any that catch my fancy. I also play hockey and mountain bike.</p>
-  <script src="script.js"></script>
+  <br>
+  <div id="icons">
+    <div class="tooltip">
+      <a id="portfolio" href="https://www.google.com" style="margin: 30px;" class="icon">
+        <i class="fas fa-folder"></i>
+      </a>
+      <span class="tooltiptext">Portfolio</span>
+    </div>
+    <div class="tooltip">
+      <a id="random" href="https://www.google.com" style="margin: 30px;" class="icon">
+        <i class="fas fa-random"></i>
+      </a>
+      <span class="tooltiptext">Random Page</span>
+    </div>
+    <div class="tooltip">
+      <a id="socials" href="https://www.google.com" style="margin: 30px;" class="icon">
+        <i class="fas fa-globe-americas"></i>
+      </a>
+      <span class="tooltiptext">Socials</span>
+    </div>
+  </div>
+  <script src="eventlisteners.js"></script>
   </body>
 </html>
